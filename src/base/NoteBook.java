@@ -2,7 +2,6 @@ package base;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -19,7 +18,7 @@ public class NoteBook implements Serializable{
     }
 
     public boolean createTextNote(String folderName, String title){
-        TextNote note = new TextNote(title);
+        TextNote note = new TextNote(title,"");
         return insertNote(folderName, note);
     }
 
@@ -84,6 +83,10 @@ public class NoteBook implements Serializable{
             return false;
         }
         return true;
+    }
+
+    public void addFolder(String foldername){
+        folders.add(new Folder(foldername));
     }
 
     public NoteBook(String file) {
