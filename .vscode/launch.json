@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LettersUI",
+            "request": "launch",
+            "mainClass": "lab9.LettersUI",
+            "projectName": "comp3021lab_2367f3c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTest",
+            "request": "launch",
+            "mainClass": "comp3021.AccountTest",
+            "projectName": "comp3021lab_2367f3c2"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -16,6 +30,14 @@
             "request": "launch",
             "vmArgs": "--module-path C:/Users/kelvin/libraries/java/javafx-sdk-18/lib --add-modules javafx.controls,javafx.fxml",
             "mainClass": "base.NoteBookWindow",
+            "projectName": "comp3021lab_2367f3c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnresponsiveUI",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/kelvin/libraries/java/javafx-sdk-18/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "lab9.UnresponsiveUI",
             "projectName": "comp3021lab_2367f3c2"
         },
         {
